@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота 3</title>
+</head>
+<body>
+    <p id="sentence">Це речення, яке можна скоротити.</p>
+    <button onclick="removeLastCharacter()">Видалити останній символ</button>
+
+    <script>
+        function removeLastCharacter() {
+            var element = document.getElementById("sentence");
+            var text = element.innerHTML;
+            element.innerHTML = text.slice(0, -1);
+        }
+    </script>
+</body>
+</html>
